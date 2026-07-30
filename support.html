@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Camera Monitor — Support</title>
+<style>
+  :root {
+    --ground: #0C0E14; --panel: #151822; --ink: #EDEFF5; --muted: #979DB0;
+    --line: #232734; --accent: #7C8CFF;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ground); color: var(--ink); line-height: 1.6;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
+  .wrap { max-width: 700px; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
+  a { color: var(--accent); }
+  h1 { font-size: 1.9rem; margin: 0.5rem 0 1.5rem; letter-spacing: -0.02em; }
+  h2 { font-size: 1.05rem; margin: 2rem 0 0.4rem; }
+  p { margin: 0 0 0.9rem; color: var(--muted); }
+  p.lead { color: var(--ink); }
+  .back { font-size: 0.9rem; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
+    padding: 1.25rem 1.5rem; margin-top: 2rem; }
+  .card p:last-child { margin-bottom: 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="back"><a href="index.html">← Camera Monitor</a></p>
+<h1>Support</h1>
+<p class="lead">Answers to the questions that come up most often. If something else goes wrong, email me — I read every message.</p>
+
+<h2>The monitor does not find my camera</h2>
+<p>Both devices must be on the same Wi-Fi network, and both need Local Network permission granted (iOS asks on first launch; you can re-enable it in Settings → Camera Monitor). If your Wi-Fi has client isolation enabled — common in hotels and cafés — turn Wi-Fi off on both devices instead: the app then connects them directly, peer to peer.</p>
+
+<h2>The picture froze</h2>
+<p>The stream pauses when the camera app goes to the background — iOS suspends it. The monitor dims the last frame and reconnects on its own once you bring the camera app back to the foreground.</p>
+
+<h2>Why is the live picture not as sharp as a photo?</h2>
+<p>The live feed is compressed video so it can travel across the network instantly. Photos you take are captured at full sensor resolution and are not affected by the stream quality.</p>
+
+<h2>Where are my photos saved?</h2>
+<p>In the photo library of the device that is filming — including photos triggered remotely from the monitor.</p>
+
+<h2>Why do the lens buttons disappear at 48 MP?</h2>
+<p>48 MP capture is only available on the physical wide camera, which cannot switch lenses. Choose 12 or 24 MP in the camera settings to get the full 0.5×/1×/2×/3× range back.</p>
+
+<div class="card">
+  <p><strong>Still stuck?</strong></p>
+  <p>Email <a href="mailto:kozlovskyaid@icloud.com">kozlovskyaid@icloud.com</a> with your device models and iOS versions, and I will get back to you.</p>
+</div>
+
+<p style="margin-top:2.5rem"><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+</div>
+</body>
+</html>

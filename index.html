@@ -3,25 +3,133 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Camera Monitor — Support</title>
+<title>Camera Monitor — a big-screen viewfinder for your iPhone camera</title>
+<meta name="description" content="Stream your iPhone camera to an iPad or a second iPhone over your local network. See yourself in the frame, fix your pose, take the shot.">
 <style>
-  :root { color-scheme: light dark; }
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-         max-width: 640px; margin: 0 auto; padding: 2rem 1.25rem; line-height: 1.6; }
-  h1 { font-size: 1.6rem; }
-  a { color: #2563eb; }
-  .muted { opacity: 0.7; font-size: 0.9rem; }
+  :root {
+    --ground: #0C0E14;
+    --panel: #151822;
+    --ink: #EDEFF5;
+    --muted: #979DB0;
+    --line: #232734;
+    --accent: #7C8CFF;
+    --accent-deep: #3B4FE0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
+  header { padding: 4.5rem 0 3rem; text-align: center; }
+  .icon {
+    width: 104px; height: 104px; border-radius: 24px; display: block; margin: 0 auto 1.5rem;
+    box-shadow: 0 12px 40px rgba(59, 79, 224, 0.35);
+  }
+  h1 { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.1; margin: 0 0 0.75rem; letter-spacing: -0.02em; }
+  .tagline { font-size: 1.15rem; color: var(--muted); max-width: 34rem; margin: 0 auto; }
+  .shots {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem; padding: 2.5rem 0;
+  }
+  .shots img {
+    width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--line); display: block;
+  }
+  section { padding: 2.5rem 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 1.4rem; margin: 0 0 1.25rem; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+  .feature h3 { font-size: 1rem; margin: 0 0 0.35rem; }
+  .feature p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+  .steps { counter-reset: step; list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; }
+  .steps li { display: flex; gap: 0.9rem; align-items: baseline; }
+  .steps li::before {
+    counter-increment: step; content: counter(step);
+    font-variant-numeric: tabular-nums; font-weight: 600; color: var(--accent);
+    background: var(--panel); border: 1px solid var(--line); border-radius: 50%;
+    width: 1.9rem; height: 1.9rem; display: grid; place-items: center; flex: none; font-size: 0.85rem;
+  }
+  .privacy { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 1.5rem; }
+  .privacy p { margin: 0; color: var(--muted); }
+  .privacy strong { color: var(--ink); }
+  footer { padding: 2.5rem 0 4rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover, footer a:focus-visible { text-decoration: underline; }
+  .links { display: flex; flex-wrap: wrap; gap: 1.25rem; margin-bottom: 1rem; }
 </style>
 </head>
 <body>
-<h1>📹 Camera Monitor</h1>
-<p>A big-screen viewfinder for your iPhone camera. One device films, another shows the live picture — over your local network, no internet needed.</p>
-<ul>
-  <li><a href="privacy.html">Privacy Policy</a></li>
-  <li><a href="terms.html">Terms of Service</a></li>
-</ul>
-<h2>Support</h2>
-<p>Questions or problems? Email <a href="mailto:kozlovskyaid@icloud.com">kozlovskyaid@icloud.com</a>.</p>
-<p class="muted">© 2026 Andrew Kozlowskiy</p>
+<div class="wrap">
+
+<header>
+  <img class="icon" src="icon.png" alt="Camera Monitor app icon">
+  <h1>See yourself the way the camera sees you</h1>
+  <p class="tagline">Camera Monitor turns an iPad or a second iPhone into a big live viewfinder for your iPhone camera — over your local network, with no internet and no accounts.</p>
+</header>
+
+<div class="shots">
+  <img src="shots/camera.jpg" alt="Camera role on iPhone: live viewfinder with lens buttons and shutter">
+  <img src="shots/monitor.jpg" alt="Monitor role on iPad: full-screen live feed with rule-of-thirds grid">
+  <img src="shots/settings.jpg" alt="Camera settings: name, password and photo resolution">
+</div>
+
+<section>
+  <h2>How it works</h2>
+  <ol class="steps">
+    <li>Open the app on two devices on the same Wi-Fi — or simply near each other, direct peer-to-peer works too.</li>
+    <li>One device becomes the Camera, the other the Monitor.</li>
+    <li>Put the phone on a tripod, walk into the frame, and watch yourself on the big screen.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Made for real shoots</h2>
+  <div class="features">
+    <div class="feature">
+      <h3>Low-latency stream</h3>
+      <p>Hardware HEVC video over your local network. No servers, no sign-in, nothing to configure.</p>
+    </div>
+    <div class="feature">
+      <h3>Remote shutter</h3>
+      <p>Take the photo from the monitor. It is saved on the camera device in full quality.</p>
+    </div>
+    <div class="feature">
+      <h3>Real camera controls</h3>
+      <p>Lens buttons, tap to focus, exposure adjustment, AE/AF lock, up to 48 MP or Apple ProRAW.</p>
+    </div>
+    <div class="feature">
+      <h3>Framing help</h3>
+      <p>Rule-of-thirds grid on both screens, so the person in the frame can fix the composition.</p>
+    </div>
+    <div class="feature">
+      <h3>Several monitors</h3>
+      <p>More than one device can watch the same camera at the same time.</p>
+    </div>
+    <div class="feature">
+      <h3>Private connection</h3>
+      <p>Set an optional password on the camera. It never travels over the network.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="privacy">
+    <p><strong>Private by design.</strong> Video never leaves your local network. No data collection, no analytics, no ads — ever.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="links">
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="mailto:kozlovskyaid@icloud.com">kozlovskyaid@icloud.com</a>
+  </div>
+  <div>© 2026 Andrew Kozlowskiy</div>
+</footer>
+
+</div>
 </body>
 </html>

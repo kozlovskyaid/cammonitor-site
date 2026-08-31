@@ -4,7 +4,8 @@
 <meta name="robots" content="noindex">
 <title>Camera Monitor — японская локализация, ревью</title>
 <style>
- :root{--ground:#0C0E14;--panel:#151822;--ink:#EDEFF5;--muted:#979DB0;--line:#232734;--accent:#7C8CFF;--warn:#F5C400}
+ :root{--ground:#0B1220;--panel:#152238;--ink:#EDEFF5;--muted:#97A2B8;--line:#22304a;
+       --accent:#FF9500;--warn:#FFC066}
  *{box-sizing:border-box}
  body{margin:0;background:var(--ground);color:var(--ink);line-height:1.6;
    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
@@ -25,22 +26,30 @@
  th,td{text-align:left;vertical-align:top;padding:.55rem .7rem;border-bottom:1px solid var(--line)}
  th{color:var(--muted);font-weight:600;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em}
  td.en{color:var(--muted);width:50%} td.ja{color:var(--ink)}
+ tr.changed td.ja{border-left:3px solid var(--accent);padding-left:.55rem}
+ .tag{color:var(--accent);font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;margin-left:.4rem}
  .nl{color:var(--warn);font-family:ui-monospace,monospace;font-size:.85em}
- code{background:#0a0c11;padding:.1rem .35rem;border-radius:5px;font-size:.85em;color:var(--ink)}
+ code{background:#070b13;padding:.1rem .35rem;border-radius:5px;font-size:.85em;color:var(--ink)}
  .count{color:var(--muted);font-size:.85rem;text-transform:none;letter-spacing:0}
 </style></head><body><div class="wrap">
 <p class="back"><a href="../../index.html">← Camera Monitor</a></p>
 <h1>Японская локализация — на проверку</h1>
-<p class="lead">Черновой перевод приложения и кадры японской карточки в App Store.
+<p class="lead">Второй заход: правки после вычитки и новая палитра кадров.
 Страница только для вычитки, в поиске не индексируется.</p>
 <div class="card">
-<p><strong>Что здесь.</strong> 14 кадров витрины, снятых с приложения, запущенного
-на японском, и полный список строк: слева оригинал, справа перевод. Всего строк
-135: переведено 127, намеренно оставлено на английском 8.</p>
-<p><strong>На что смотреть.</strong> Не столько на дословность, сколько на тон и на длину:
-длинная строка ломает вёрстку в узких местах — чипах и кнопках. Если что-то звучит
-неестественно или слишком буквально, отметь строку: править по одной легко.</p>
-<p><span class="nl">\n</span> — значимый перенос строки внутри текста.</p></div>
+<p><strong>Что изменилось с прошлого раза.</strong> Внесены шесть правок из вычитки —
+они отмечены <span class="tag">правка</span> и оранжевой чертой. Две я не принял:
+<code>引き継ぐ</code> вместо <code>反映する</code> (речь о передаче настроек в другое
+приложение, это ровно 引き継ぐ) и <code>バックグラウンドに移りました</code> вместо
+<code>動作中です</code> — предложенный вариант говорит «работает», тогда как приложение
+в этот момент усыплено системой, то есть смысл обратный.</p>
+<p><strong>Кадры перекрашены</strong> в navy + orange и устройства расставлены внахлёст:
+iPad позади с уходом за правый край, iPhone впереди слева. Кадр про подтверждение
+подключения оставлен со своей раскладкой — он показывает две стороны одного диалога,
+а не пару устройств.</p>
+<p>Всего строк 135: переведено 127,
+намеренно на английском 8.
+<span class="nl">\n</span> — значимый перенос строки.</p></div>
 <h2>Кадры витрины</h2>
 <h3>iPhone 6.9″</h3><div class="shots">
 <figure><img src="frames/iphone/1-hero.png" alt="1-hero" loading="lazy"><figcaption>1-hero</figcaption></figure>
@@ -77,11 +86,11 @@
 <tr><td class="en">Name</td><td class="ja">名前</td></tr>
 <tr><td class="en">Name your camera, add a password</td><td class="ja">カメラに名前とパスワードを</td></tr>
 <tr><td class="en">On the camera device, set a name so it&#x27;s easy to recognize in the monitor&#x27;s list. Add an optional password so strangers on your network can&#x27;t watch.</td><td class="ja">カメラ側のデバイスに名前を付けておくと、モニターの一覧で見分けやすくなります。パスワードを設定すれば、同じネットワーク上の知らない相手に見られることもありません。</td></tr>
-<tr><td class="en">See yourself as the camera sees you</td><td class="ja">カメラから見た自分を確かめる</td></tr>
+<tr class="changed"><td class="en">See yourself as the camera sees you</td><td class="ja">カメラに映る自分を確認する<span class="tag">правка</span></td></tr>
 <tr><td class="en">Skip</td><td class="ja">スキップ</td></tr>
 <tr><td class="en">The phone on the tripod films you — but its screen faces away. Camera Monitor puts the live picture on a second screen, so you can fix your pose, framing and light without walking back.</td><td class="ja">三脚のiPhoneはあなたを撮っていますが、画面は向こう側を向いています。Camera Monitorはその映像をもう一台の画面に映すので、いちいち戻らずにポーズや構図、光を直せます。</td></tr>
-<tr><td class="en">Two devices, one app</td><td class="ja">2台のデバイスに、1つのアプリ</td></tr>
-<tr><td class="en">When a monitor connects, the camera device asks first — the monitor waits until you tap Allow. Nothing streams before that.</td><td class="ja">モニターが接続すると、まずカメラ側に確認が表示されます。あなたが「許可」をタップするまでモニターは待機し、それまで映像は流れません。</td></tr>
+<tr class="changed"><td class="en">Two devices, one app</td><td class="ja">2台のデバイスで、1つのアプリ<span class="tag">правка</span></td></tr>
+<tr class="changed"><td class="en">When a monitor connects, the camera device asks first — the monitor waits until you tap Allow. Nothing streams before that.</td><td class="ja">モニターが接続すると、まずカメラ側に確認が表示されます。あなたが「許可」をタップするまでモニターは待機し、それまで映像は配信されません。<span class="tag">правка</span></td></tr>
 <tr><td class="en">With</td><td class="ja">あり</td></tr>
 <tr><td class="en">Without</td><td class="ja">なし</td></tr>
 <tr><td class="en">You decide who watches</td><td class="ja">見る相手はあなたが決める</td></tr>
@@ -125,8 +134,8 @@
 <tr><td class="en">Password</td><td class="ja">パスワード</td></tr>
 <tr><td class="en">Photo</td><td class="ja">写真</td></tr>
 <tr><td class="en">Resolution</td><td class="ja">解像度</td></tr>
-<tr><td class="en">Resolutions are read from the current camera of this device.</td><td class="ja">解像度は、このデバイスの現在のカメラから読み取られます。</td></tr>
-<tr><td class="en">Resolutions are read from the current camera. ProRAW saves an unprocessed DNG at native sensor resolutions.</td><td class="ja">解像度は現在のカメラから読み取られます。ProRAWでは、センサー本来の解像度で未処理のDNGを保存します。</td></tr>
+<tr class="changed"><td class="en">Resolutions are read from the current camera of this device.</td><td class="ja">解像度は、このデバイスの現在のカメラから取得されます。<span class="tag">правка</span></td></tr>
+<tr class="changed"><td class="en">Resolutions are read from the current camera. ProRAW saves an unprocessed DNG at native sensor resolutions.</td><td class="ja">解像度は現在のカメラから取得されます。ProRAWでは、センサー本来の解像度で未処理のDNGを保存します。<span class="tag">правка</span></td></tr>
 <tr><td class="en">Rule of thirds grid</td><td class="ja">三分割グリッド</td></tr>
 <tr><td class="en">Save</td><td class="ja">保存</td></tr>
 <tr><td class="en">Self-timer</td><td class="ja">セルフタイマー</td></tr>
@@ -143,7 +152,7 @@
 </table>
 <h3>Экран монитора <span class="count">— 21</span></h3>
 <table><tr><th>Оригинал</th><th>Японский</th></tr>
-<tr><td class="en">Camera is in the background</td><td class="ja">カメラがバックグラウンドにあります</td></tr>
+<tr class="changed"><td class="en">Camera is in the background</td><td class="ja">カメラはバックグラウンドに移りました<span class="tag">правка</span></td></tr>
 <tr><td class="en">Cameras</td><td class="ja">カメラ</td></tr>
 <tr><td class="en">Connect</td><td class="ja">接続</td></tr>
 <tr><td class="en">Connecting…</td><td class="ja">接続中…</td></tr>
@@ -206,8 +215,7 @@
 <tr><td class="en">Terms of Service</td><td class="ja">利用規約</td></tr>
 <tr><td class="en">Version</td><td class="ja">バージョン</td></tr>
 </table>
-<h2>Оставлено на английском</h2>
-<table><tr><th>Строка</th><th>Почему</th></tr>
+<h2>Оставлено на английском</h2><table><tr><th>Строка</th><th>Почему</th></tr>
 <tr><td class="en"><code>%lld</code></td><td class="ja">число обратного отсчёта</td></tr>
 <tr><td class="en"><code>?</code></td><td class="ja">символ</td></tr>
 <tr><td class="en"><code>Apple ProRAW (DNG)</code></td><td class="ja">торговая марка Apple</td></tr>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Camera Monitor — японская локализация, ревью</title>
+<style>
+ :root{--ground:#0C0E14;--panel:#151822;--ink:#EDEFF5;--muted:#979DB0;--line:#232734;--accent:#7C8CFF;--warn:#F5C400}
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--ground);color:var(--ink);line-height:1.6;
+   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
+ .wrap{max-width:1100px;margin:0 auto;padding:3rem 1.5rem 5rem}
+ a{color:var(--accent)}
+ h1{font-size:1.9rem;margin:.5rem 0;letter-spacing:-.02em}
+ h2{font-size:1.25rem;margin:3rem 0 .6rem}
+ h3{font-size:.85rem;margin:2rem 0 .6rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+ p{margin:0 0 .9rem;color:var(--muted)} p.lead{color:var(--ink)}
+ .back{font-size:.9rem}
+ .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:1.25rem 1.5rem;margin:2rem 0}
+ .card p:last-child{margin-bottom:0}
+ .shots{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:1rem;margin:1rem 0 2rem}
+ .shots figure{margin:0}
+ .shots img{width:100%;border-radius:12px;border:1px solid var(--line);display:block}
+ .shots figcaption{font-size:.8rem;color:var(--muted);margin-top:.4rem}
+ table{width:100%;border-collapse:collapse;margin:.5rem 0 1rem;font-size:.92rem}
+ th,td{text-align:left;vertical-align:top;padding:.55rem .7rem;border-bottom:1px solid var(--line)}
+ th{color:var(--muted);font-weight:600;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em}
+ td.en{color:var(--muted);width:50%} td.ja{color:var(--ink)}
+ .nl{color:var(--warn);font-family:ui-monospace,monospace;font-size:.85em}
+ code{background:#0a0c11;padding:.1rem .35rem;border-radius:5px;font-size:.85em;color:var(--ink)}
+ .count{color:var(--muted);font-size:.85rem;text-transform:none;letter-spacing:0}
+</style></head><body><div class="wrap">
+<p class="back"><a href="../../index.html">← Camera Monitor</a></p>
+<h1>Японская локализация — на проверку</h1>
+<p class="lead">Черновой перевод приложения и кадры японской карточки в App Store.
+Страница только для вычитки, в поиске не индексируется.</p>
+<div class="card">
+<p><strong>Что здесь.</strong> 14 кадров витрины, снятых с приложения, запущенного
+на японском, и полный список строк: слева оригинал, справа перевод. Всего строк
+135: переведено 127, намеренно оставлено на английском 8.</p>
+<p><strong>На что смотреть.</strong> Не столько на дословность, сколько на тон и на длину:
+длинная строка ломает вёрстку в узких местах — чипах и кнопках. Если что-то звучит
+неестественно или слишком буквально, отметь строку: править по одной легко.</p>
+<p><span class="nl">\n</span> — значимый перенос строки внутри текста.</p></div>
+<h2>Кадры витрины</h2>
+<h3>iPhone 6.9″</h3><div class="shots">
+<figure><img src="frames/iphone/1-hero.png" alt="1-hero" loading="lazy"><figcaption>1-hero</figcaption></figure>
+<figure><img src="frames/iphone/2-reference.png" alt="2-reference" loading="lazy"><figcaption>2-reference</figcaption></figure>
+<figure><img src="frames/iphone/3-frame.png" alt="3-frame" loading="lazy"><figcaption>3-frame</figcaption></figure>
+<figure><img src="frames/iphone/4-shutter.png" alt="4-shutter" loading="lazy"><figcaption>4-shutter</figcaption></figure>
+<figure><img src="frames/iphone/5-approval.png" alt="5-approval" loading="lazy"><figcaption>5-approval</figcaption></figure>
+<figure><img src="frames/iphone/6-private.png" alt="6-private" loading="lazy"><figcaption>6-private</figcaption></figure>
+<figure><img src="frames/iphone/7-roles.png" alt="7-roles" loading="lazy"><figcaption>7-roles</figcaption></figure>
+</div>
+<h3>iPad 13″</h3><div class="shots">
+<figure><img src="frames/ipad/1-hero.png" alt="1-hero" loading="lazy"><figcaption>1-hero</figcaption></figure>
+<figure><img src="frames/ipad/2-reference.png" alt="2-reference" loading="lazy"><figcaption>2-reference</figcaption></figure>
+<figure><img src="frames/ipad/3-frame.png" alt="3-frame" loading="lazy"><figcaption>3-frame</figcaption></figure>
+<figure><img src="frames/ipad/4-shutter.png" alt="4-shutter" loading="lazy"><figcaption>4-shutter</figcaption></figure>
+<figure><img src="frames/ipad/5-approval.png" alt="5-approval" loading="lazy"><figcaption>5-approval</figcaption></figure>
+<figure><img src="frames/ipad/6-cameras.png" alt="6-cameras" loading="lazy"><figcaption>6-cameras</figcaption></figure>
+<figure><img src="frames/ipad/7-roles.png" alt="7-roles" loading="lazy"><figcaption>7-roles</figcaption></figure>
+</div>
+<h2>Строки приложения</h2>
+<h3>Выбор роли <span class="count">— 4</span></h3>
+<table><tr><th>Оригинал</th><th>Японский</th></tr>
+<tr><td class="en">Monitor</td><td class="ja">モニター</td></tr>
+<tr><td class="en">Stream the camera of one device to the screen of another over your local network — no internet needed.</td><td class="ja">一方のデバイスのカメラ映像を、ローカルネットワーク経由でもう一方の画面へ。インターネットは必要ありません。</td></tr>
+<tr><td class="en">This device films and broadcasts</td><td class="ja">このデバイスで撮影し、配信します</td></tr>
+<tr><td class="en">This device shows the camera feed</td><td class="ja">このデバイスに映像を表示します</td></tr>
+</table>
+<h3>Онбординг <span class="count">— 20</span></h3>
+<table><tr><th>Оригинал</th><th>Японский</th></tr>
+<tr><td class="en">Choose a Role</td><td class="ja">役割を選択</td></tr>
+<tr><td class="en">Continue</td><td class="ja">続ける</td></tr>
+<tr><td class="en">Install this app on both devices and turn Wi-Fi on. The same network is the easy case, but it is not required — devices near each other link up directly. One becomes the Camera: it films and broadcasts. The other becomes the Monitor: it shows the live feed and can take the shot.</td><td class="ja">両方のデバイスにこのアプリを入れ、Wi-Fiをオンにします。同じネットワークにあれば簡単ですが、必須ではありません。近くにあるデバイス同士は直接つながります。一方が「カメラ」になって撮影と配信を行い、もう一方が「モニター」になって映像を映し、シャッターを切れます。</td></tr>
+<tr><td class="en">Meanwhile on the monitor: “Waiting for approval”</td><td class="ja">このときモニター側には「承認を待っています」と表示されます</td></tr>
+<tr><td class="en">Name</td><td class="ja">名前</td></tr>
+<tr><td class="en">Name your camera, add a password</td><td class="ja">カメラに名前とパスワードを</td></tr>
+<tr><td class="en">On the camera device, set a name so it&#x27;s easy to recognize in the monitor&#x27;s list. Add an optional password so strangers on your network can&#x27;t watch.</td><td class="ja">カメラ側のデバイスに名前を付けておくと、モニターの一覧で見分けやすくなります。パスワードを設定すれば、同じネットワーク上の知らない相手に見られることもありません。</td></tr>
+<tr><td class="en">See yourself as the camera sees you</td><td class="ja">カメラから見た自分を確かめる</td></tr>
+<tr><td class="en">Skip</td><td class="ja">スキップ</td></tr>
+<tr><td class="en">The phone on the tripod films you — but its screen faces away. Camera Monitor puts the live picture on a second screen, so you can fix your pose, framing and light without walking back.</td><td class="ja">三脚のiPhoneはあなたを撮っていますが、画面は向こう側を向いています。Camera Monitorはその映像をもう一台の画面に映すので、いちいち戻らずにポーズや構図、光を直せます。</td></tr>
+<tr><td class="en">Two devices, one app</td><td class="ja">2台のデバイスに、1つのアプリ</td></tr>
+<tr><td class="en">When a monitor connects, the camera device asks first — the monitor waits until you tap Allow. Nothing streams before that.</td><td class="ja">モニターが接続すると、まずカメラ側に確認が表示されます。あなたが「許可」をタップするまでモニターは待機し、それまで映像は流れません。</td></tr>
+<tr><td class="en">With</td><td class="ja">あり</td></tr>
+<tr><td class="en">Without</td><td class="ja">なし</td></tr>
+<tr><td class="en">You decide who watches</td><td class="ja">見る相手はあなたが決める</td></tr>
+<tr><td class="en">films and<span class="nl">\n</span>broadcasts</td><td class="ja">撮影して<span class="nl">\n</span>配信する</td></tr>
+<tr><td class="en">how the monitor sees it</td><td class="ja">モニターでの見えかた</td></tr>
+<tr><td class="en">over Wi-Fi</td><td class="ja">Wi-Fi経由</td></tr>
+<tr><td class="en">shows the feed,<span class="nl">\n</span>takes the shot</td><td class="ja">映像を映し<span class="nl">\n</span>シャッターを切る</td></tr>
+<tr><td class="en">“iPad” wants to view this camera</td><td class="ja">「iPad」がこのカメラの視聴を求めています</td></tr>
+</table>
+<h3>Экран камеры <span class="count">— 47</span></h3>
+<table><tr><th>Оригинал</th><th>Японский</th></tr>
+<tr><td class="en">%lld seconds</td><td class="ja">%lld秒</td></tr>
+<tr><td class="en">%lld seconds left</td><td class="ja">残り%lld秒</td></tr>
+<tr><td class="en">%lld seconds until the photo</td><td class="ja">撮影まで%lld秒</td></tr>
+<tr><td class="en">%llds</td><td class="ja">%lld秒</td></tr>
+<tr><td class="en">AE/AF LOCK</td><td class="ja">AE/AFロック</td></tr>
+<tr><td class="en">Allow</td><td class="ja">許可</td></tr>
+<tr><td class="en">Allow camera access in Settings to stream video.</td><td class="ja">映像を配信するには、「設定」でカメラへのアクセスを許可してください。</td></tr>
+<tr><td class="en">Aspect ratio %@</td><td class="ja">アスペクト比%@</td></tr>
+<tr><td class="en">Camera</td><td class="ja">カメラ</td></tr>
+<tr><td class="en">Camera Monitor keeps streaming while the Camera app is open, but it cannot pass the zoom or aspect ratio across — no iOS interface accepts them.</td><td class="ja">「カメラ」アプリを開いている間も配信は続きますが、ズームやアスペクト比を引き継ぐことはできません。iOSにそのための仕組みがないためです。</td></tr>
+<tr><td class="en">Camera Settings</td><td class="ja">カメラ設定</td></tr>
+<tr><td class="en">Camera access is required</td><td class="ja">カメラへのアクセスが必要です</td></tr>
+<tr><td class="en">Camera name</td><td class="ja">カメラ名</td></tr>
+<tr><td class="en">Cancel</td><td class="ja">キャンセル</td></tr>
+<tr><td class="en">Cancel the countdown</td><td class="ja">カウントダウンを中止</td></tr>
+<tr><td class="en">Close</td><td class="ja">閉じる</td></tr>
+<tr><td class="en">Cycles between off, 3, 5 and 10 seconds</td><td class="ja">オフ、3秒、5秒、10秒を順に切り替えます</td></tr>
+<tr><td class="en">Deny</td><td class="ja">許可しない</td></tr>
+<tr><td class="en">Don&#x27;t show again</td><td class="ja">今後表示しない</td></tr>
+<tr><td class="en">Get the shortcut</td><td class="ja">ショートカットを入手</td></tr>
+<tr><td class="en">Install the shortcut named “%@”.</td><td class="ja">「%@」という名前のショートカットをインストールしてください。</td></tr>
+<tr><td class="en">It will see the live view and can trigger the shutter. Allow only devices you know.</td><td class="ja">接続すると映像が見え、シャッターも切れます。信頼できるデバイスだけを許可してください。</td></tr>
+<tr><td class="en">Monitors connected: %lld</td><td class="ja">接続中のモニター：%lld</td></tr>
+<tr><td class="en">Monitors must enter this password to connect. Leave it empty to let anyone on your network ask — every monitor still needs your approval on this device. Changing the password disconnects current monitors.</td><td class="ja">モニターはこのパスワードを入力して接続します。空欄にすると、同じネットワーク上の誰でも接続を求められますが、いずれの場合もこのデバイスでの承認が必要です。パスワードを変更すると、接続中のモニターは切断されます。</td></tr>
+<tr><td class="en">No password</td><td class="ja">パスワードなし</td></tr>
+<tr><td class="en">Off</td><td class="ja">オフ</td></tr>
+<tr><td class="en">On</td><td class="ja">オン</td></tr>
+<tr><td class="en">Open Settings</td><td class="ja">設定を開く</td></tr>
+<tr><td class="en">Open the Camera app</td><td class="ja">「カメラ」アプリを開く</td></tr>
+<tr><td class="en">Password</td><td class="ja">パスワード</td></tr>
+<tr><td class="en">Photo</td><td class="ja">写真</td></tr>
+<tr><td class="en">Resolution</td><td class="ja">解像度</td></tr>
+<tr><td class="en">Resolutions are read from the current camera of this device.</td><td class="ja">解像度は、このデバイスの現在のカメラから読み取られます。</td></tr>
+<tr><td class="en">Resolutions are read from the current camera. ProRAW saves an unprocessed DNG at native sensor resolutions.</td><td class="ja">解像度は現在のカメラから読み取られます。ProRAWでは、センサー本来の解像度で未処理のDNGを保存します。</td></tr>
+<tr><td class="en">Rule of thirds grid</td><td class="ja">三分割グリッド</td></tr>
+<tr><td class="en">Save</td><td class="ja">保存</td></tr>
+<tr><td class="en">Self-timer</td><td class="ja">セルフタイマー</td></tr>
+<tr><td class="en">Shown to monitors in the camera list.</td><td class="ja">モニターのカメラ一覧に表示されます。</td></tr>
+<tr><td class="en">Starting camera…</td><td class="ja">カメラを起動しています…</td></tr>
+<tr><td class="en">Switch between front and back camera</td><td class="ja">前面カメラと背面カメラを切り替え</td></tr>
+<tr><td class="en">Take photo</td><td class="ja">写真を撮る</td></tr>
+<tr><td class="en">Tap the camera button here — it runs that shortcut, and the Camera app opens.</td><td class="ja">ここのカメラボタンを押すとそのショートカットが実行され、「カメラ」アプリが開きます。</td></tr>
+<tr><td class="en">Try it</td><td class="ja">試してみる</td></tr>
+<tr><td class="en">Waiting for a monitor…</td><td class="ja">モニターを待っています…</td></tr>
+<tr><td class="en">Zoom %@×</td><td class="ja">ズーム%@×</td></tr>
+<tr><td class="en">iOS does not let one app open the Camera app directly. A one-time shortcut does it for you.</td><td class="ja">iOSでは、アプリから「カメラ」アプリを直接開くことはできません。一度だけ設定するショートカットがその役割を果たします。</td></tr>
+<tr><td class="en">“%@” wants to view this camera</td><td class="ja">「%@」がこのカメラの視聴を求めています</td></tr>
+</table>
+<h3>Экран монитора <span class="count">— 21</span></h3>
+<table><tr><th>Оригинал</th><th>Японский</th></tr>
+<tr><td class="en">Camera is in the background</td><td class="ja">カメラがバックグラウンドにあります</td></tr>
+<tr><td class="en">Cameras</td><td class="ja">カメラ</td></tr>
+<tr><td class="en">Connect</td><td class="ja">接続</td></tr>
+<tr><td class="en">Connecting…</td><td class="ja">接続中…</td></tr>
+<tr><td class="en">Connection failed: %@</td><td class="ja">接続に失敗しました：%@</td></tr>
+<tr><td class="en">Connection lost</td><td class="ja">接続が切れました</td></tr>
+<tr><td class="en">Disconnect from this camera</td><td class="ja">このカメラから切断</td></tr>
+<tr><td class="en">Goes back to the list of cameras</td><td class="ja">カメラの一覧に戻ります</td></tr>
+<tr><td class="en">Looking for cameras nearby…</td><td class="ja">近くのカメラを探しています…</td></tr>
+<tr><td class="en">Open this app on another device and choose “Camera”. Both devices need Wi-Fi enabled.</td><td class="ja">もう一方のデバイスでこのアプリを開き、「カメラ」を選んでください。どちらのデバイスもWi-Fiをオンにする必要があります。</td></tr>
+<tr><td class="en">Password required</td><td class="ja">パスワードが必要です</td></tr>
+<tr><td class="en">Photo failed</td><td class="ja">撮影に失敗しました</td></tr>
+<tr><td class="en">Photo saved on camera</td><td class="ja">カメラ側に写真を保存しました</td></tr>
+<tr><td class="en">Stop reconnecting</td><td class="ja">再接続をやめる</td></tr>
+<tr><td class="en">Take photo on the camera</td><td class="ja">カメラ側で写真を撮る</td></tr>
+<tr><td class="en">Trying to reconnect…</td><td class="ja">再接続しています…</td></tr>
+<tr><td class="en">Trying to reconnect… (attempt %lld)</td><td class="ja">再接続しています…（%lld回目）</td></tr>
+<tr><td class="en">Waiting for approval</td><td class="ja">承認を待っています</td></tr>
+<tr><td class="en">“%@” declined the connection.</td><td class="ja">「%@」が接続を拒否しました。</td></tr>
+<tr><td class="en">“%@” is asking its owner to let you in.</td><td class="ja">「%@」が、持ち主に接続の許可を求めています。</td></tr>
+<tr><td class="en">“%@” is protected with a password.</td><td class="ja">「%@」はパスワードで保護されています。</td></tr>
+</table>
+<h3>Панель референса <span class="count">— 24</span></h3>
+<table><tr><th>Оригинал</th><th>Японский</th></tr>
+<tr><td class="en">Add a reference</td><td class="ja">リファレンスを追加</td></tr>
+<tr><td class="en">Adjust the reference</td><td class="ja">リファレンスを調整</td></tr>
+<tr><td class="en">Contrast</td><td class="ja">コントラスト</td></tr>
+<tr><td class="en">Discards the reference picture and its placement</td><td class="ja">リファレンス画像と配置を破棄します</td></tr>
+<tr><td class="en">Drag to move, pinch to zoom, twist to rotate. Double tap to fit.</td><td class="ja">ドラッグで移動、ピンチで拡大縮小、ひねりで回転。ダブルタップで画面に合わせます。</td></tr>
+<tr><td class="en">Flips the picture left to right, for a reference that faces the wrong way</td><td class="ja">向きが逆のリファレンスのために、画像を左右反転します</td></tr>
+<tr><td class="en">Freezes the reference and returns the frame to focus and exposure</td><td class="ja">リファレンスを固定し、画面をフォーカスと露出の操作に戻します</td></tr>
+<tr><td class="en">Mirror</td><td class="ja">左右反転</td></tr>
+<tr><td class="en">Mirror the reference</td><td class="ja">リファレンスを左右反転</td></tr>
+<tr><td class="en">Opacity</td><td class="ja">不透明度</td></tr>
+<tr><td class="en">Opens a mode for moving, zooming and rotating the reference</td><td class="ja">リファレンスを移動・拡大縮小・回転するモードを開きます</td></tr>
+<tr><td class="en">Outline only</td><td class="ja">輪郭のみ</td></tr>
+<tr><td class="en">Picks a photo to lay over the frame as a guide</td><td class="ja">目安として画面に重ねる写真を選びます</td></tr>
+<tr><td class="en">Puts the reference back to fitting the frame, keeping the mirroring</td><td class="ja">左右反転はそのままに、リファレンスを画面に合わせた状態に戻します</td></tr>
+<tr><td class="en">Reference</td><td class="ja">リファレンス</td></tr>
+<tr><td class="en">Reference overlay</td><td class="ja">リファレンス表示</td></tr>
+<tr><td class="en">Remove</td><td class="ja">削除</td></tr>
+<tr><td class="en">Remove the reference?</td><td class="ja">リファレンスを削除しますか？</td></tr>
+<tr><td class="en">Replace</td><td class="ja">置き換え</td></tr>
+<tr><td class="en">Replace the reference</td><td class="ja">リファレンスを置き換え</td></tr>
+<tr><td class="en">Replaces the photo with its edges, so only the shapes show over the frame</td><td class="ja">写真を輪郭線に置き換え、形だけを画面に重ねます</td></tr>
+<tr><td class="en">Reset</td><td class="ja">リセット</td></tr>
+<tr><td class="en">Shows or hides the reference picture over the frame</td><td class="ja">画面に重ねるリファレンス画像を表示・非表示にします</td></tr>
+<tr><td class="en">The picture and its placement are discarded.</td><td class="ja">画像と配置は破棄されます。</td></tr>
+</table>
+<h3>О приложении <span class="count">— 11</span></h3>
+<table><tr><th>Оригинал</th><th>Японский</th></tr>
+<tr><td class="en">About</td><td class="ja">このアプリについて</td></tr>
+<tr><td class="en">Camera Monitor streams the camera of one device to the screen of another over your local network. Video never leaves your network.</td><td class="ja">Camera Monitorは、一方のデバイスのカメラ映像をローカルネットワーク経由でもう一方の画面に配信します。映像がネットワークの外に出ることはありません。</td></tr>
+<tr><td class="en">Contact</td><td class="ja">連絡先</td></tr>
+<tr><td class="en">Developer</td><td class="ja">開発者</td></tr>
+<tr><td class="en">Done</td><td class="ja">完了</td></tr>
+<tr><td class="en">Help</td><td class="ja">ヘルプ</td></tr>
+<tr><td class="en">How the App Works</td><td class="ja">使いかた</td></tr>
+<tr><td class="en">Legal</td><td class="ja">法的情報</td></tr>
+<tr><td class="en">Privacy Policy</td><td class="ja">プライバシーポリシー</td></tr>
+<tr><td class="en">Terms of Service</td><td class="ja">利用規約</td></tr>
+<tr><td class="en">Version</td><td class="ja">バージョン</td></tr>
+</table>
+<h2>Оставлено на английском</h2>
+<table><tr><th>Строка</th><th>Почему</th></tr>
+<tr><td class="en"><code>%lld</code></td><td class="ja">число обратного отсчёта</td></tr>
+<tr><td class="en"><code>?</code></td><td class="ja">символ</td></tr>
+<tr><td class="en"><code>Apple ProRAW (DNG)</code></td><td class="ja">торговая марка Apple</td></tr>
+<tr><td class="en"><code>Camera Monitor</code></td><td class="ja">название приложения</td></tr>
+<tr><td class="en"><code>LIVE</code></td><td class="ja">значок; в японских камерах остаётся латиницей</td></tr>
+<tr><td class="en"><code>Studio Cam</code></td><td class="ja">подставное имя устройства, только для кадров витрины</td></tr>
+<tr><td class="en"><code>kozlovskyaid@icloud.com</code></td><td class="ja">адрес почты</td></tr>
+<tr><td class="en"><code>••••••</code></td><td class="ja">маркер скрытого пароля</td></tr>
+</table></div></body></html>
